@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security - RecepAI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot nav-icon"></i>
+                <span class="brand-text">RecepAI</span>
+            </div>
+            <a href="index.html" class="cta-button">Back to Home</a>
+        </div>
+    </nav>
+
+    <div class="legal-page">
+        <div class="container">
+            <div class="legal-header">
+                <h1>Security</h1>
+                <p class="last-updated">Last updated: December 15, 2024</p>
+            </div>
+
+            <div class="legal-content">
+                <section>
+                    <h2>1. Our Security Commitment</h2>
+                    <p>At RecepAI, security is fundamental to everything we do. We implement comprehensive security measures to protect your data, maintain service availability, and ensure the integrity of our AI receptionist platform.</p>
+                </section>
+
+                <section>
+                    <h2>2. Data Encryption</h2>
+                    
+                    <h3>2.1 Encryption in Transit</h3>
+                    <ul>
+                        <li><strong>TLS 1.3:</strong> All data transmission uses the latest TLS encryption</li>
+                        <li><strong>HTTPS Everywhere:</strong> All web traffic is encrypted</li>
+                        <li><strong>API Security:</strong> All API communications use strong encryption</li>
+                        <li><strong>Voice Data:</strong> Real-time voice encryption during calls</li>
+                    </ul>
+
+                    <h3>2.2 Encryption at Rest</h3>
+                    <ul>
+                        <li><strong>AES-256:</strong> Industry-standard encryption for stored data</li>
+                        <li><strong>Database Encryption:</strong> All databases are encrypted at rest</li>
+                        <li><strong>File Storage:</strong> Encrypted file systems for all data storage</li>
+                        <li><strong>Backup Encryption:</strong> All backups are encrypted</li>
+                    </ul>
+
+                    <h3>2.3 Key Management</h3>
+                    <ul>
+                        <li>Hardware Security Modules (HSMs) for key storage</li>
+                        <li>Regular key rotation policies</li>
+                        <li>Multi-factor authentication for key access</li>
+                        <li>Audit trails for all key operations</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>3. Infrastructure Security</h2>
+                    
+                    <h3>3.1 Cloud Security</h3>
+                    <ul>
+                        <li><strong>AWS/Azure:</strong> Enterprise-grade cloud infrastructure</li>
+                        <li><strong>VPC Isolation:</strong> Private virtual networks</li>
+                        <li><strong>Network Segmentation:</strong> Isolated security zones</li>
+                        <li><strong>DDoS Protection:</strong> Advanced threat mitigation</li>
+                    </ul>
+
+                    <h3>3.2 Server Security</h3>
+                    <ul>
+                        <li>Regular security patches and updates</li>
+                        <li>Hardened server configurations</li>
+                        <li>Intrusion detection systems</li>
+                        <li>Automated vulnerability scanning</li>
+                    </ul>
+
+                    <h3>3.3 Network Security</h3>
+                    <ul>
+                        <li><strong>Firewalls:</strong> Multi-layer firewall protection</li>
+                        <li><strong>WAF:</strong> Web Application Firewall filtering</li>
+                        <li><strong>IPS/IDS:</strong> Intrusion prevention and detection</li>
+                        <li><strong>Network Monitoring:</strong> 24/7 traffic analysis</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>4. Access Controls</h2>
+                    
+                    <h3>4.1 Authentication</h3>
+                    <ul>
+                        <li><strong>Multi-Factor Authentication:</strong> Required for all accounts</li>
+                        <li><strong>SSO Integration:</strong> Support for enterprise identity providers</li>
+                        <li><strong>Password Policies:</strong> Strong password requirements</li>
+                        <li><strong>Session Management:</strong> Secure session handling</li>
+                    </ul>
+
+                    <h3>4.2 Authorization</h3>
+                    <ul>
+                        <li><strong>Role-Based Access:</strong> Granular permission system</li>
+                        <li><strong>Principle of Least Privilege:</strong> Minimal necessary access</li>
+                        <li><strong>Regular Access Reviews:</strong> Periodic permission audits</li>
+                        <li><strong>Automated Deprovisioning:</strong> Immediate access removal</li>
+                    </ul>
+
+                    <h3>4.3 Employee Access</h3>
+                    <ul>
+                        <li>Background checks for all employees</li>
+                        <li>Security training and awareness programs</li>
+                        <li>Confidentiality agreements</li>
+                        <li>Regular security assessments</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>5. Application Security</h2>
+                    
+                    <h3>5.1 Secure Development</h3>
+                    <ul>
+                        <li><strong>SSDLC:</strong> Secure Software Development Lifecycle</li>
+                        <li><strong>Code Reviews:</strong> Mandatory security code reviews</li>
+                        <li><strong>Static Analysis:</strong> Automated code security scanning</li>
+                        <li><strong>Dependency Scanning:</strong> Third-party library vulnerability checks</li>
+                    </ul>
+
+                    <h3>5.2 Runtime Protection</h3>
+                    <ul>
+                        <li><strong>RASP:</strong> Runtime Application Self-Protection</li>
+                        <li><strong>Input Validation:</strong> Comprehensive data validation</li>
+                        <li><strong>Output Encoding:</strong> XSS and injection prevention</li>
+                        <li><strong>Rate Limiting:</strong> API abuse prevention</li>
+                    </ul>
+
+                    <h3>5.3 AI Model Security</h3>
+                    <ul>
+                        <li>Model integrity verification</li>
+                        <li>Adversarial attack protection</li>
+                        <li>Training data security</li>
+                        <li>Model access controls</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>6. Monitoring and Incident Response</h2>
+                    
+                    <h3>6.1 Security Monitoring</h3>
+                    <ul>
+                        <li><strong>SIEM:</strong> Security Information and Event Management</li>
+                        <li><strong>24/7 SOC:</strong> Security Operations Center monitoring</li>
+                        <li><strong>Threat Intelligence:</strong> Real-time threat feeds</li>
+                        <li><strong>Behavioral Analytics:</strong> Anomaly detection systems</li>
+                    </ul>
+
+                    <h3>6.2 Incident Response</h3>
+                    <ul>
+                        <li><strong>Response Team:</strong> Dedicated incident response team</li>
+                        <li><strong>Playbooks:</strong> Documented response procedures</li>
+                        <li><strong>Communication Plan:</strong> Stakeholder notification process</li>
+                        <li><strong>Forensics:</strong> Digital forensics capabilities</li>
+                    </ul>
+
+                    <h3>6.3 Business Continuity</h3>
+                    <ul>
+                        <li>Disaster recovery planning</li>
+                        <li>Regular backup testing</li>
+                        <li>Redundant systems and failover</li>
+                        <li>Recovery time objectives (RTO)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>7. Compliance and Certifications</h2>
+                    
+                    <h3>7.1 Security Standards</h3>
+                    <ul>
+                        <li><strong>SOC 2 Type II:</strong> Annual security audits</li>
+                        <li><strong>ISO 27001:</strong> Information security management</li>
+                        <li><strong>PCI DSS:</strong> Payment card data security</li>
+                        <li><strong>HIPAA:</strong> Healthcare data protection</li>
+                    </ul>
+
+                    <h3>7.2 Privacy Regulations</h3>
+                    <ul>
+                        <li><strong>GDPR:</strong> European data protection compliance</li>
+                        <li><strong>CCPA:</strong> California privacy law compliance</li>
+                        <li><strong>PIPEDA:</strong> Canadian privacy compliance</li>
+                        <li><strong>LGPD:</strong> Brazilian data protection compliance</li>
+                    </ul>
+
+                    <h3>7.3 Industry Standards</h3>
+                    <ul>
+                        <li>NIST Cybersecurity Framework</li>
+                        <li>OWASP security guidelines</li>
+                        <li>Cloud Security Alliance (CSA)</li>
+                        <li>FedRAMP security controls</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>8. Data Protection</h2>
+                    
+                    <h3>8.1 Data Classification</h3>
+                    <ul>
+                        <li><strong>Public:</strong> Publicly available information</li>
+                        <li><strong>Internal:</strong> Internal business information</li>
+                        <li><strong>Confidential:</strong> Sensitive business data</li>
+                        <li><strong>Restricted:</strong> Highly sensitive personal data</li>
+                    </ul>
+
+                    <h3>8.2 Data Handling</h3>
+                    <ul>
+                        <li>Data minimization principles</li>
+                        <li>Purpose limitation enforcement</li>
+                        <li>Retention policy compliance</li>
+                        <li>Secure data disposal</li>
+                    </ul>
+
+                    <h3>8.3 Privacy by Design</h3>
+                    <ul>
+                        <li>Privacy impact assessments</li>
+                        <li>Data protection by default</li>
+                        <li>Pseudonymization techniques</li>
+                        <li>Anonymization methods</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>9. Third-Party Security</h2>
+                    
+                    <h3>9.1 Vendor Management</h3>
+                    <ul>
+                        <li>Security assessments for all vendors</li>
+                        <li>Contractual security requirements</li>
+                        <li>Regular vendor security reviews</li>
+                        <li>Supply chain risk management</li>
+                    </ul>
+
+                    <h3>9.2 Integration Security</h3>
+                    <ul>
+                        <li>API security standards</li>
+                        <li>OAuth 2.0 and OpenID Connect</li>
+                        <li>Webhook security validation</li>
+                        <li>Third-party data encryption</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>10. Physical Security</h2>
+                    <ul>
+                        <li><strong>Data Centers:</strong> Tier III+ certified facilities</li>
+                        <li><strong>Access Controls:</strong> Biometric and card-based access</li>
+                        <li><strong>Surveillance:</strong> 24/7 video monitoring</li>
+                        <li><strong>Environmental:</strong> Climate and power controls</li>
+                        <li><strong>Redundancy:</strong> Multiple facility locations</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>11. Security Testing</h2>
+                    
+                    <h3>11.1 Regular Testing</h3>
+                    <ul>
+                        <li><strong>Penetration Testing:</strong> Quarterly external testing</li>
+                        <li><strong>Vulnerability Scanning:</strong> Continuous automated scanning</li>
+                        <li><strong>Red Team Exercises:</strong> Annual security simulations</li>
+                        <li><strong>Bug Bounty Program:</strong> Responsible disclosure program</li>
+                    </ul>
+
+                    <h3>11.2 Security Audits</h3>
+                    <ul>
+                        <li>Annual third-party security audits</li>
+                        <li>Compliance assessments</li>
+                        <li>Internal security reviews</li>
+                        <li>Risk assessments</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>12. Customer Security</h2>
+                    
+                    <h3>12.1 Account Security</h3>
+                    <ul>
+                        <li>Strong password requirements</li>
+                        <li>Multi-factor authentication options</li>
+                        <li>Session timeout controls</li>
+                        <li>Login anomaly detection</li>
+                    </ul>
+
+                    <h3>12.2 Data Controls</h3>
+                    <ul>
+                        <li>Data export capabilities</li>
+                        <li>Data deletion options</li>
+                        <li>Access logging and auditing</li>
+                        <li>Permission management</li>
+                    </ul>
+
+                    <h3>12.3 Security Best Practices</h3>
+                    <ul>
+                        <li>Security awareness training</li>
+                        <li>Configuration guidelines</li>
+                        <li>Incident reporting procedures</li>
+                        <li>Regular security updates</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>13. Reporting Security Issues</h2>
+                    <p>If you discover a security vulnerability, please report it responsibly:</p>
+                    
+                    <h3>13.1 Responsible Disclosure</h3>
+                    <ul>
+                        <li><strong>Email:</strong> security@recepai.com</li>
+                        <li><strong>PGP Key:</strong> Available on our website</li>
+                        <li><strong>Response Time:</strong> Within 24 hours</li>
+                        <li><strong>Coordination:</strong> We'll work with you on disclosure</li>
+                    </ul>
+
+                    <h3>13.2 Bug Bounty Program</h3>
+                    <ul>
+                        <li>Rewards for valid security findings</li>
+                        <li>Clear scope and rules</li>
+                        <li>Recognition for researchers</li>
+                        <li>Legal safe harbor</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>14. Contact Information</h2>
+                    <p>For security-related inquiries, please contact us:</p>
+                    <div class="contact-info">
+                        <p><strong>Security Team:</strong> security@recepai.com</p>
+                        <p><strong>Privacy Team:</strong> privacy@recepai.com</p>
+                        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                        <p><strong>Address:</strong> 123 AI Innovation Drive, San Francisco, CA 94105</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 RecepAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecepAI - AI Receptionist Solutions for Modern Businesses</title>
+    <meta name="description" content="Transform your business with cutting-edge AI receptionist solutions. Provide 24/7 customer service, streamline operations, and enhance customer experience with RecepAI.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot nav-icon"></i>
+                <span class="brand-text">RecepAI</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#services" class="nav-link" data-section="services">Services</a>
+                <a href="#products" class="nav-link" data-section="products">Products</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            
+            <button class="cta-button get-started-trigger" data-plan="General Interest">Get Started</button>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div id="particles-js"></div>
+        
+        <div class="hero-content">
+            <div class="floating-elements">
+                <div class="floating-element element-1"></div>
+                <div class="floating-element element-2"></div>
+                <div class="floating-element element-3"></div>
+                <div class="floating-element element-4"></div>
+                <div class="floating-element element-5"></div>
+            </div>
+            
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line-1">The Future of</span>
+                    <span class="title-line-2">AI Reception</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Transform your business with cutting-edge AI receptionist solutions. 
+                    Provide 24/7 customer service, streamline operations, and enhance 
+                    customer experience with our intelligent automation systems.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="primary-button get-started-trigger" data-plan="Hero Section">
+                        Start Your AI Journey
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="secondary-button" id="learn-more-btn">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-sparkles"></i>
+                        <span>24/7 Availability</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-sparkles"></i>
+                        <span>AI-Powered</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-sparkles"></i>
+                        <span>Seamless Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our AI Solutions</h2>
+                <p class="section-subtitle">
+                    Comprehensive AI-powered services designed to revolutionize your business 
+                    operations and enhance customer experience.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">AI Receptionist</h3>
+                    <p class="service-description">
+                        Intelligent virtual receptionist that handles calls, schedules appointments, 
+                        and provides information 24/7.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Natural Language Processing</li>
+                        <li><i class="fas fa-check"></i> Multi-language Support</li>
+                        <li><i class="fas fa-check"></i> Call Routing</li>
+                        <li><i class="fas fa-check"></i> Appointment Scheduling</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="service-title">Call Management</h3>
+                    <p class="service-description">
+                        Advanced call handling system with intelligent routing, voicemail 
+                        transcription, and call analytics.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Smart Call Routing</li>
+                        <li><i class="fas fa-check"></i> Voicemail to Text</li>
+                        <li><i class="fas fa-check"></i> Call Recording</li>
+                        <li><i class="fas fa-check"></i> Analytics Dashboard</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="service-title">Live Chat AI</h3>
+                    <p class="service-description">
+                        Conversational AI for websites and apps that provides instant customer 
+                        support and lead generation.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Real-time Responses</li>
+                        <li><i class="fas fa-check"></i> Lead Qualification</li>
+                        <li><i class="fas fa-check"></i> CRM Integration</li>
+                        <li><i class="fas fa-check"></i> Sentiment Analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3 class="service-title">Appointment Booking</h3>
+                    <p class="service-description">
+                        Automated scheduling system that manages appointments, sends reminders, 
+                        and handles cancellations.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Calendar Integration</li>
+                        <li><i class="fas fa-check"></i> Automated Reminders</li>
+                        <li><i class="fas fa-check"></i> Booking Confirmations</li>
+                        <li><i class="fas fa-check"></i> Rescheduling</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Customer Management</h3>
+                    <p class="service-description">
+                        Comprehensive CRM integration that tracks customer interactions and 
+                        maintains detailed profiles.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Customer Profiles</li>
+                        <li><i class="fas fa-check"></i> Interaction History</li>
+                        <li><i class="fas fa-check"></i> Follow-up Automation</li>
+                        <li><i class="fas fa-check"></i> Data Analytics</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="service-title">Analytics & Insights</h3>
+                    <p class="service-description">
+                        Detailed reporting and analytics to track performance, customer satisfaction, 
+                        and business metrics.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Performance Metrics</li>
+                        <li><i class="fas fa-check"></i> Customer Insights</li>
+                        <li><i class="fas fa-check"></i> ROI Tracking</li>
+                        <li><i class="fas fa-check"></i> Custom Reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your AI Solution</h2>
+                <p class="section-subtitle">
+                    Flexible pricing plans designed to scale with your business needs. 
+                    Start small and grow with our comprehensive AI reception solutions.
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">RecepAI Starter</h3>
+                        <div class="plan-price">
+                            <span class="price">$99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">
+                            Perfect for small businesses looking to automate basic reception tasks.
+                        </p>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> AI Phone Answering</li>
+                        <li><i class="fas fa-check"></i> Basic Appointment Scheduling</li>
+                        <li><i class="fas fa-check"></i> Email Integration</li>
+                        <li><i class="fas fa-check"></i> 50 Calls/Month</li>
+                        <li><i class="fas fa-check"></i> Business Hours Support</li>
+                        <li><i class="fas fa-check"></i> Basic Analytics</li>
+                    </ul>
+                    
+                    <button class="plan-button get-started-trigger" data-plan="RecepAI Starter">Get Started</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">
+                        <i class="fas fa-star"></i>
+                        Most Popular
+                    </div>
+                    
+                    <div class="pricing-header">
+                        <h3 class="plan-name">RecepAI Professional</h3>
+                        <div class="plan-price">
+                            <span class="price">$299</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">
+                            Comprehensive solution for growing businesses with advanced features.
+                        </p>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Everything in Starter</li>
+                        <li><i class="fas fa-check"></i> 24/7 AI Reception</li>
+                        <li><i class="fas fa-check"></i> Advanced Call Routing</li>
+                        <li><i class="fas fa-check"></i> CRM Integration</li>
+                        <li><i class="fas fa-check"></i> 500 Calls/Month</li>
+                        <li><i class="fas fa-check"></i> Multi-language Support</li>
+                        <li><i class="fas fa-check"></i> Custom Voice Training</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                    </ul>
+                    
+                    <button class="plan-button primary get-started-trigger" data-plan="RecepAI Professional">Get Started</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">RecepAI Enterprise</h3>
+                        <div class="plan-price">
+                            <span class="price">Custom</span>
+                            <span class="period">pricing</span>
+                        </div>
+                        <p class="plan-description">
+                            Tailored solutions for large organizations with complex requirements.
+                        </p>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Everything in Professional</li>
+                        <li><i class="fas fa-check"></i> Unlimited Calls</li>
+                        <li><i class="fas fa-check"></i> Custom AI Training</li>
+                        <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                        <li><i class="fas fa-check"></i> API Access</li>
+                        <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                        <li><i class="fas fa-check"></i> Custom Integrations</li>
+                        <li><i class="fas fa-check"></i> SLA Guarantee</li>
+                    </ul>
+                    
+                    <button class="plan-button get-started-trigger" data-plan="RecepAI Enterprise">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About RecepAI</h2>
+                <div class="about-content">
+                    <p class="about-text">
+                        Founded in 2020, RecepAI is at the forefront of artificial intelligence innovation, 
+                        specializing in conversational AI solutions that transform how businesses interact 
+                        with their customers. Our mission is to make advanced AI technology accessible to 
+                        businesses of all sizes.
+                    </p>
+                    <p class="about-text">
+                        We believe that every business deserves access to intelligent, responsive, and 
+                        personalized customer service solutions. Our team of AI experts, engineers, and 
+                        customer success professionals work tirelessly to deliver cutting-edge technology 
+                        that drives real business results.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Businesses Served</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="stat-number" data-target="99.9">0</div>
+                    <div class="stat-label">Uptime Guarantee</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">AI Models Trained</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Industry Awards</div>
+                </div>
+            </div>
+            
+            <div class="mission-vision">
+                <div class="mission-card">
+                    <h3 class="card-title">Our Mission</h3>
+                    <p class="card-text">
+                        To democratize artificial intelligence by providing businesses with intelligent, 
+                        accessible, and affordable AI reception solutions that enhance customer experience 
+                        and operational efficiency.
+                    </p>
+                </div>
+                
+                <div class="vision-card">
+                    <h3 class="card-title">Our Vision</h3>
+                    <p class="card-text">
+                        To become the global leader in conversational AI, creating a world where every 
+                        business interaction is intelligent, personalized, and seamlessly automated while 
+                        maintaining the human touch.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">
+                    Don't just take our word for it. See how RecepAI has transformed businesses across industries.
+                </p>
+            </div>
+            
+            <div class="testimonial-carousel">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                "RecepAI has completely transformed our customer service. We went from missing 30% 
+                                of calls to having 24/7 coverage. Our customer satisfaction scores have increased 
+                                by 40% since implementation."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b9e0e4d4?w=80&h=80&fit=crop&crop=face" alt="Jennifer Martinez">
+                                <div class="author-info">
+                                    <div class="author-name">Jennifer Martinez</div>
+                                    <div class="author-role">Operations Manager</div>
+                                    <div class="author-company">TechStart Solutions</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                "The appointment scheduling feature alone has saved us 15 hours per week. Patients 
+                                love the instant responses, and our staff can focus on providing better care instead 
+                                of answering phones."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Robert Chen">
+                                <div class="author-info">
+                                    <div class="author-name">Robert Chen</div>
+                                    <div class="author-role">CEO</div>
+                                    <div class="author-company">MedCare Clinic</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                "Implementation was seamless, and the ROI was immediate. RecepAI handles complex 
+                                inquiries with ease and seamlessly transfers to human agents when needed. It's like 
+                                having a perfect receptionist."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="Sarah Thompson">
+                                <div class="author-info">
+                                    <div class="author-name">Sarah Thompson</div>
+                                    <div class="author-role">Customer Success Director</div>
+                                    <div class="author-company">GrowthCorp</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots" id="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="carousel-btn next" id="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get Started Today</h2>
+                <p class="section-subtitle">
+                    Ready to transform your business with AI? Contact our team to discuss your needs 
+                    and discover how RecepAI can help you deliver exceptional customer experiences.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Configuration -->
+                        <input type="hidden" name="access_key" value="a7ef9865-9d5f-4961-8961-3461b6341b82">
+                        <input type="hidden" name="subject" value="New Contact Form Submission - RecepAI">
+                        <input type="hidden" name="from_name" value="RecepAI Website">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+                        
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="company">Company</label>
+                                    <input type="text" id="company" name="company">
+                                </div>
+                                <div class="form-field">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-field">
+                                <label for="service">Service Interest</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="ai-receptionist">AI Receptionist</option>
+                                    <option value="call-management">Call Management</option>
+                                    <option value="live-chat">Live Chat AI</option>
+                                    <option value="appointment-booking">Appointment Booking</option>
+                                    <option value="custom-solution">Custom Solution</option>
+                                    <option value="consultation">Free Consultation</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-field">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your business needs and how we can help..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Follow Us</h3>
+                            <p>@RecepAI<br>Daily AI insights & updates<br>Behind-the-scenes content</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567<br>+1 (555) 123-4568<br>Mon-Fri 9AM-6PM PST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>hello@recepai.com<br>support@recepai.com<br>sales@recepai.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telegram Support</h3>
+                            <p>@RecepAISupport<br>Instant technical help<br>24/7 automated assistance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-robot"></i>
+                        <span>RecepAI</span>
+                    </div>
+                    <p class="footer-description">
+                        Transforming business communications with cutting-edge AI receptionist solutions. 
+                        Providing 24/7 intelligent customer service that scales with your business.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="gdpr.html">GDPR Compliance</a></li>
+                        <li><a href="security.html">Security</a></li>
+                        <li><a href="compliance.html">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 RecepAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Chat Bot -->
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-toggle" id="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-info">
+                    <i class="fas fa-robot"></i>
+                    <div>
+                        <div class="chatbot-title">RecepAI Assistant</div>
+                        <div class="chatbot-status">Online</div>
+                    </div>
+                </div>
+                <button class="chatbot-close" id="chatbot-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        Hello! I'm RecepAI's virtual assistant. How can I help you today?
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Type your message...">
+                <button id="chatbot-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Get Started Modal -->
+    <div class="modal-overlay" id="get-started-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Get Started with RecepAI</h2>
+                <button class="modal-close" id="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="get-started-form" id="get-started-form-container">
+                    <div class="form-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Ready to Transform Your Business?</h3>
+                    <p>Enter your details to get started with RecepAI. Our team will contact you within 24 hours.</p>
+                    
+                    <form class="get-started-form-element" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Configuration -->
+                        <input type="hidden" name="access_key" value="a7ef9865-9d5f-4961-8961-3461b6341b82">
+                        <input type="hidden" name="subject" value="New Lead - RecepAI Get Started">
+                        <input type="hidden" name="from_name" value="RecepAI Website">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+                        
+                        <!-- Dynamic message field that will be updated by JavaScript -->
+                        <input type="hidden" name="message" id="dynamic-message" value="This person is interested in getting started with RecepAI services.">
+                        <input type="hidden" name="plan_interest" id="plan-interest" value="">
+                        
+                        <div class="form-field">
+                            <label for="get-started-email">Email Address *</label>
+                            <input type="email" id="get-started-email" name="email" required placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="get-started-name">Full Name</label>
+                            <input type="text" id="get-started-name" name="name" placeholder="Your Name">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="get-started-company">Company</label>
+                            <input type="text" id="get-started-company" name="company" placeholder="Your Company">
+                        </div>
+                        
+                        <button type="submit" class="get-started-submit">
+                            <span class="button-text">Get Started Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="success-message" id="success-message" style="display: none;">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Thank You!</h3>
+                    <p>We've received your information and our team will contact you within 24 hours to discuss how RecepAI can transform your business.</p>
+                    <button class="close-modal-btn" id="close-success">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+// Initialize particles
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80, density: { enable: true, value_area: 800 } },
+    color: { value: "#22d3ee" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5, random: false },
+    size: { value: 3, random: true },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#22d3ee",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 6,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+    },
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" },
+      resize: true,
+    },
+  },
+  retina_detect: true,
+})
+
+// Register GSAP plugins
+gsap.registerPlugin(ScrollTrigger)
+
+// Navbar and scrollspy functionality
+const navbar = document.getElementById("navbar")
+const navLinks = document.querySelectorAll(".nav-link")
+const sections = document.querySelectorAll("section[id]")
+
+// Mobile menu toggle
+const hamburger = document.getElementById("hamburger")
+const navMenu = document.getElementById("nav-menu")
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active")
+  navMenu.classList.toggle("active")
+})
+
+// Close mobile menu when clicking on a link
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
+  })
+})
+
+// Enhanced Scrollspy functionality
+function updateActiveNavLink() {
+  let current = ""
+  const scrollPosition = window.scrollY + 100
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop
+    const sectionHeight = section.clientHeight
+
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      current = section.getAttribute("id")
+    }
+  })
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active")
+    if (link.getAttribute("data-section") === current) {
+      link.classList.add("active")
+    }
+  })
+}
+
+// Throttled scroll event for better performance
+let ticking = false
+function updateScrollEffects() {
+  // Navbar background on scroll
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled")
+  } else {
+    navbar.classList.remove("scrolled")
+  }
+
+  // Update active nav link
+  updateActiveNavLink()
+  ticking = false
+}
+
+window.addEventListener("scroll", () => {
+  if (!ticking) {
+    requestAnimationFrame(updateScrollEffects)
+    ticking = true
+  }
+})
+
+// Smooth scroll for navigation links
+navLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault()
+    const targetId = this.getAttribute("data-section")
+    const targetSection = document.getElementById(targetId)
+
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+  })
+})
+
+// Wait for page to load before starting animations
+window.addEventListener("load", function() {
+  // Enhanced Hero animations with GSAP
+  const heroTimeline = gsap.timeline()
+
+  heroTimeline
+    .from(".title-line-1", { duration: 1.2, y: 100, opacity: 0, ease: "power3.out" })
+    .from(".title-line-2", { duration: 1.2, y: 100, opacity: 0, ease: "power3.out" }, "-=0.6")
+    .from(".hero-subtitle", { duration: 1, y: 50, opacity: 0, ease: "power3.out" }, "-=0.4")
+    .from(".hero-buttons", { duration: 0.8, y: 30, opacity: 0, ease: "power3.out" }, "-=0.3")
+    .from(".hero-features", { duration: 0.8, y: 20, opacity: 0, ease: "power3.out" }, "-=0.2")
+
+  // Enhanced scroll-triggered animations
+  gsap.utils.toArray(".service-card").forEach((card, i) => {
+    gsap.fromTo(
+      card,
+      { y: 100, opacity: 0, scale: 0.9 },
+      {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",
+          end: "bottom 15%",
+          toggleActions: "play none none reverse",
+        },
+        delay: i * 0.1,
+      },
+    )
+  })
+
+  gsap.utils.toArray(".pricing-card").forEach((card, i) => {
+    gsap.fromTo(
+      card,
+      { y: 120, opacity: 0, scale: 0.8 },
+      {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 1.2,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",
+          end: "bottom 15%",
+          toggleActions: "play none none reverse",
+        },
+        delay: i * 0.2,
+      },
+    )
+  })
+
+  gsap.utils.toArray(".stat-card").forEach((card, i) => {
+    gsap.fromTo(
+      card,
+      { scale: 0.6, opacity: 0, rotation: -10 },
+      {
+        scale: 1,
+        opacity: 1,
+        rotation: 0,
+        duration: 1,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",
+          end: "bottom 15%",
+          toggleActions: "play none none reverse",
+        },
+        delay: i * 0.15,
+      },
+    )
+  })
+
+  // Enhanced counter animation for stats
+  function animateCounter(element, target, suffix = "") {
+    let current = 0
+    const increment = target / 60 // 60 frames for smooth animation
+    const timer = setInterval(() => {
+      current += increment
+      if (current >= target) {
+        current = target
+        clearInterval(timer)
+      }
+      element.textContent = Math.floor(current) + suffix
+    }, 16) // ~60fps
+  }
+
+  // Trigger counter animations when stats section is visible
+  ScrollTrigger.create({
+    trigger: ".stats-grid",
+    start: "top 80%",
+    onEnter: () => {
+      document.querySelectorAll(".stat-number").forEach((stat) => {
+        const target = parseFloat(stat.getAttribute("data-target"))
+        const suffix = target === 99.9 ? "%" : target > 100 ? "+" : ""
+        animateCounter(stat, target, suffix)
+      })
+    },
+  })
+
+  // Enhanced parallax effect for hero section
+  gsap.to(".hero-content", {
+    yPercent: -30,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".hero-section",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+    },
+  })
+
+  // Enhanced text reveal animations
+  gsap.utils.toArray(".section-title").forEach((title) => {
+    gsap.fromTo(
+      title,
+      { y: 60, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: title,
+          start: "top 85%",
+          end: "bottom 15%",
+          toggleActions: "play none none reverse",
+        },
+      },
+    )
+  })
+
+  // Enhanced section subtitle animations
+  gsap.utils.toArray(".section-subtitle").forEach((subtitle) => {
+    gsap.fromTo(
+      subtitle,
+      { y: 40, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: subtitle,
+          start: "top 85%",
+          end: "bottom 15%",
+          toggleActions: "play none none reverse",
+        },
+      },
+    )
+  })
+
+  // Add entrance animation to floating elements
+  gsap.fromTo(
+    ".floating-element",
+    { scale: 0, opacity: 0 },
+    {
+      scale: 1,
+      opacity: 0.6,
+      duration: 1,
+      ease: "back.out(1.7)",
+      stagger: 0.2,
+      delay: 1,
+    },
+  )
+
+  // Refresh ScrollTrigger to ensure proper positioning
+  ScrollTrigger.refresh()
+
+  // Add loaded class to body for any CSS transitions
+  document.body.classList.add("loaded")
+
+  // Initialize scrollspy
+  updateActiveNavLink()
+})
+
+// Enhanced testimonial carousel
+let currentSlide = 0
+const slides = document.querySelectorAll(".testimonial-slide")
+const dots = document.querySelectorAll(".dot")
+const prevBtn = document.getElementById("prev-btn")
+const nextBtn = document.getElementById("next-btn")
+
+function showSlide(index) {
+  slides.forEach((slide) => slide.classList.remove("active"))
+  dots.forEach((dot) => dot.classList.remove("active"))
+
+  slides[index].classList.add("active")
+  dots[index].classList.add("active")
+  currentSlide = index
+}
+
+function nextSlide() {
+  const next = (currentSlide + 1) % slides.length
+  showSlide(next)
+}
+
+function prevSlide() {
+  const prev = (currentSlide - 1 + slides.length) % slides.length
+  showSlide(prev)
+}
+
+nextBtn.addEventListener("click", nextSlide)
+prevBtn.addEventListener("click", prevSlide)
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => showSlide(index))
+})
+
+// Auto-advance testimonials with pause on hover
+let testimonialInterval = setInterval(nextSlide, 5000)
+
+document.querySelector(".testimonial-carousel").addEventListener("mouseenter", () => {
+  clearInterval(testimonialInterval)
+})
+
+document.querySelector(".testimonial-carousel").addEventListener("mouseleave", () => {
+  testimonialInterval = setInterval(nextSlide, 5000)
+})
+
+// Enhanced chatbot functionality
+const chatbotToggle = document.getElementById("chatbot-toggle")
+const chatbotWindow = document.getElementById("chatbot-window")
+const chatbotClose = document.getElementById("chatbot-close")
+const chatbotInput = document.getElementById("chatbot-input")
+const chatbotSend = document.getElementById("chatbot-send")
+const chatbotMessages = document.getElementById("chatbot-messages")
+
+const botResponses = [
+  "I'd be happy to help you learn more about RecepAI's solutions! 🤖",
+  "Our AI receptionist can handle calls 24/7 and integrate with your existing systems seamlessly.",
+  "RecepAI offers three main plans: Starter ($99/month), Professional ($299/month), and Enterprise (custom pricing). Which one interests you?",
+  "Our AI can handle appointment scheduling, call routing, and customer inquiries automatically. It's like having a perfect receptionist!",
+  "Let me connect you with our sales team for a personalized consultation. Would you like me to schedule that?",
+  "RecepAI integrates with popular CRM systems like Salesforce, HubSpot, and many more. What system are you currently using?",
+  "Our setup process typically takes 24-48 hours with full support from our team. We make it super easy!",
+  "Would you like to see a demo of RecepAI in action? I can arrange that for you right away! ✨",
+]
+
+chatbotToggle.addEventListener("click", () => {
+  chatbotWindow.classList.add("active")
+  chatbotToggle.style.display = "none"
+  chatbotInput.focus()
+})
+
+chatbotClose.addEventListener("click", () => {
+  chatbotWindow.classList.remove("active")
+  chatbotToggle.style.display = "flex"
+})
+
+function addMessage(text, isUser = false) {
+  const messageDiv = document.createElement("div")
+  messageDiv.className = `message ${isUser ? "user-message" : "bot-message"}`
+
+  messageDiv.innerHTML = `
+    <div class="message-avatar">
+      <i class="fas fa-${isUser ? "user" : "robot"}"></i>
+    </div>
+    <div class="message-content">${text}</div>
+  `
+
+  chatbotMessages.appendChild(messageDiv)
+  chatbotMessages.scrollTop = chatbotMessages.scrollHeight
+}
+
+function sendMessage() {
+  const message = chatbotInput.value.trim()
+  if (!message) return
+
+  addMessage(message, true)
+  chatbotInput.value = ""
+
+  // Show typing indicator with more realistic delay
+  setTimeout(
+    () => {
+      const randomResponse = botResponses[Math.floor(Math.random() * botResponses.length)]
+      addMessage(randomResponse)
+    },
+    1000 + Math.random() * 2000,
+  )
+}
+
+chatbotSend.addEventListener("click", sendMessage)
+chatbotInput.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    sendMessage()
+  }
+})
+
+// Enhanced Get Started Modal Functionality with Plan Tracking
+const getStartedBtns = document.querySelectorAll(".get-started-trigger")
+const getStartedModal = document.getElementById("get-started-modal")
+const modalClose = document.getElementById("modal-close")
+const getStartedFormContainer = document.getElementById("get-started-form-container")
+const successMessage = document.getElementById("success-message")
+const closeSuccessBtn = document.getElementById("close-success")
+const learnMoreBtn = document.getElementById("learn-more-btn")
+
+// Variable to store which plan was clicked
+let selectedPlan = ""
+
+// Plan-specific messages
+const planMessages = {
+  "RecepAI Starter": "This person is interested in the RecepAI Starter plan ($99/month). They clicked the Get Started button from the Starter pricing card. This plan includes: AI Phone Answering, Basic Appointment Scheduling, Email Integration, 50 Calls/Month, Business Hours Support, and Basic Analytics.",
+  
+  "RecepAI Professional": "This person is interested in the RecepAI Professional plan ($299/month). They clicked the Get Started button from the Professional pricing card (Most Popular plan). This plan includes: Everything in Starter, 24/7 AI Reception, Advanced Call Routing, CRM Integration, 500 Calls/Month, Multi-language Support, Custom Voice Training, and Priority Support.",
+  
+  "RecepAI Enterprise": "This person is interested in the RecepAI Enterprise plan (Custom pricing). They clicked the Contact Sales button from the Enterprise pricing card. This plan includes: Everything in Professional, Unlimited Calls, Custom AI Training, Advanced Analytics, API Access, Dedicated Account Manager, Custom Integrations, and SLA Guarantee.",
+  
+  "Hero Section": "This person clicked the 'Start Your AI Journey' button from the hero section of the website. They are showing general interest in RecepAI services and want to learn more about getting started.",
+  
+  "General Interest": "This person clicked a Get Started button from the navigation or general area of the website. They are showing interest in RecepAI services and want to learn more about getting started."
+}
+
+// Open modal when Get Started buttons are clicked
+getStartedBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault()
+    
+    // Get the plan from the data-plan attribute
+    selectedPlan = btn.getAttribute("data-plan") || "General Interest"
+    
+    // Update the hidden message field with plan-specific message
+    const messageField = document.getElementById("dynamic-message")
+    const planInterestField = document.getElementById("plan-interest")
+    
+    if (messageField && planInterestField) {
+      messageField.value = planMessages[selectedPlan] || planMessages["General Interest"]
+      planInterestField.value = selectedPlan
+    }
+    
+    // Open modal
+    getStartedModal.classList.add("active")
+    document.body.style.overflow = "hidden"
+
+    // Focus on email input after modal opens
+    setTimeout(() => {
+      document.getElementById("get-started-email").focus()
+    }, 300)
+  })
+})
+
+// Learn More button scrolls to services
+if (learnMoreBtn) {
+  learnMoreBtn.addEventListener("click", (e) => {
+    e.preventDefault()
+    document.getElementById("services").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    })
+  })
+}
+
+// Close modal function
+function closeModal() {
+  getStartedModal.classList.remove("active")
+  document.body.style.overflow = "auto"
+
+  // Reset form after a delay
+  setTimeout(() => {
+    getStartedFormContainer.style.display = "block"
+    successMessage.style.display = "none"
+  }, 300)
+}
+
+modalClose.addEventListener("click", closeModal)
+closeSuccessBtn.addEventListener("click", closeModal)
+
+// Close modal when clicking outside
+getStartedModal.addEventListener("click", (e) => {
+  if (e.target === getStartedModal) {
+    closeModal()
+  }
+})
+
+// Close modal with Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && getStartedModal.classList.contains("active")) {
+    closeModal()
+  }
+})
+
+// Enhanced hover effects with GSAP
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll(".service-card, .pricing-card, .contact-card").forEach((card) => {
+    card.addEventListener("mouseenter", () => {
+      gsap.to(card, { duration: 0.4, y: -15, scale: 1.02, ease: "power2.out" })
+    })
+
+    card.addEventListener("mouseleave", () => {
+      gsap.to(card, { duration: 0.4, y: 0, scale: 1, ease: "power2.out" })
+    })
+  })
+
+  // Enhanced button interactions
+  document.querySelectorAll("button, .nav-link").forEach((element) => {
+    element.addEventListener("mouseenter", () => {
+      gsap.to(element, { scale: 1.05, duration: 0.2, ease: "power2.out" })
+    })
+
+    element.addEventListener("mouseleave", () => {
+      gsap.to(element, { scale: 1, duration: 0.2, ease: "power2.out" })
+    })
+  })
+})
+
+// Handle window resize
+window.addEventListener("resize", () => {
+  ScrollTrigger.refresh()
+})
+
+// Add smooth page transitions
+document.addEventListener("DOMContentLoaded", () => {
+  // Fade in page content
+  gsap.fromTo("body", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "power2.out" })
+})
+
+// Add intersection observer for additional animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px",
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-fade-in")
+    }
+  })
+}, observerOptions)
+
+// Observe elements for fade-in animation
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll(".about-text, .contact-card, .footer-section").forEach((el) => {
+    observer.observe(el)
+  })
+})
+</script>
+</body>
+</html>
